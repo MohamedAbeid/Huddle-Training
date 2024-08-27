@@ -1,0 +1,73 @@
+body {
+    background-image: url(../images/bg-desktop.svg);
+    background-color: #674bb1;
+    background-repeat: no-repeat;
+    background-size: calc( 100% + 65px);
+    font-family: "Poppins", sans-serif;
+    font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 767px) {
+    body {
+        background-size: auto;
+    }
+} 
+.form {
+    background-color: hsl(256.47deg 56.39% 72.19% / 42%);
+    width: 50%;
+    border: 3px solid #d6d2d2;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    box-shadow: 0px 10px 15px 0px rgb(29 31 36 / 20%);
+}
+@media (max-width: 767px) {
+    .form {
+        width: 90%;
+    }
+} 
+.form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.form form label {
+    margin: 10px 0;
+}
+.form form input[type="text"],input[type="email"],input[type="password"] {
+    width: 50%;
+    border-radius: 25px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+}
+@media (max-width: 767px) {
+    .form form input[type="text"],input[type="email"],input[type="password"] {
+        width: 90%;
+    }
+} 
+.form form input[type="submit"] {
+    width: 50%;
+    padding: 13px 40px;
+    margin-top: 35px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+} 
+
+.form form input[type="submit"]:hover {
+    background-color: hsla(322, 100%, 66%, 0.625);
+} 
+
+@media (max-width: 767px) {
+    .form form input[type="submit"] {
+        width: 90%;
+    }
+} 

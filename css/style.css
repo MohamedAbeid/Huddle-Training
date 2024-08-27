@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-family: "Open Sans", sans-serif;
+}
+.flex-dir {
+    flex-direction: row-reverse;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    border-style: none;
+}
+a {
+    text-decoration: none;
+}
+.center {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .center {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .center {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .center {
+        width: 1170px;
+    }
+}
+@media (max-width: 767px) {
+    .center{
+        padding-left: 25px;   
+        padding-right: 25px;
+
+    }
+}
+.top {
+    background-image: url(/images/bg-hero-desktop.svg);
+    background-color: #e7f8ffb8;
+    height: 600px;
+    width: 100%;
+}
+@media (max-width: 767px) {
+    .top{
+        background-image: url(/images/bg-hero-mobile.svg);
+        background-color: #e7f8ffb8;
+        background-repeat: no-repeat;
+        height: 800px;
+    }
+}
+.top .center .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+@media (max-width: 767px) {
+    .top .center .header .logo img{
+        width: 133px;
+    }
+} 
+
+.button {
+    padding: 13px 40px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px 0px rgb(29 31 36 / 20%);
+}
+
+.top .center .header .links a {
+    background-color: white;
+    font-weight: 600;
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .top .center .header .links a {
+        padding: 6px 30px;
+    }
+} 
+
+.top .center .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+    height: auto;
+}
+@media (max-width: 767px) {
+    .top .center .content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.top .center .content .text {
+    width: 560px;
+}
+@media (max-width: 767px) {
+    .top .center .content .text {
+        width: 100%;
+    }
+}
+.top .center .content .text h3 {
+    font-size: 45px;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 767px) {
+    .top .center .content .text h3 {
+        font-size: 25px;
+    }
+} 
+.top .center .content .text p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    width: 500px;
+}
+
+@media (max-width: 767px) {
+    .top .center .content .text p {
+        margin: 0px 0 35px 28px;
+        width: 300px;
+        font-size: 16px;
+    }
+} 
+
+.top .center .content .text a {
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.top .center .content .text a:hover {
+    background-color: hsla(322, 100%, 66%, 0.625);
+}
+
+@media (max-width: 767px) {
+    .top .center .content .text a {
+        margin-bottom: 50px;
+    }
+} 
+
+.top .center .content .img img {
+    max-width: 530px;
+}
+
+@media (max-width: 767px) {
+    .top .center .content .img img {
+        max-width: 336px;
+    }
+} 
+
+/* End Top */
+
+/* Start Medi*/
+
+.medi {
+    margin-top: 120px;
+    background-color: white;
+}
+
+.medi .center .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 10px 5px rgb(29 31 36 / 20%);
+    padding: 30px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+    .medi .center .box {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+} 
+
+.medi .center .box .text {
+    padding: 100px;
+    padding-right: 50px;
+}
+
+@media (max-width: 767px) {
+    .medi .center .box .text {
+        padding: 20px;
+    }
+} 
+
+.medi .center .box .text h4 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+@media (max-width: 767px) {
+    .medi .center .box .text h4 {
+        font-size: 21px;
+    }
+} 
+
+@media (max-width: 767px) {
+    .medi .center .box .text p {
+        font-size: 15px;
+        width: 270px;
+    }
+} 
+
+.medi .center .box .text p {
+    line-height: 1.6;
+    color: #ababab;
+}
+.medi .center .box .img img {
+    max-width: 400px;
+}
+
+@media (max-width: 767px) {
+    .medi .center .box .img img {
+        max-width: 300px;
+    }
+} 
+/* End Medi */
+
+/* Start Footer */
+.footer {
+    background-color: hsl(192, 100%, 9%);
+    height: 450px;
+    margin-top: 250px;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        height: 900px;
+    }
+} 
+
+.footer .center {
+    padding-top: 100px;
+}
+
+.footer .center .logo img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(232deg) brightness(107%) contrast(108%);
+    width: 180px;
+}
+
+.footer .center .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(208, 11%, 55%);
+}
+
+@media (max-width: 767px) {
+    .footer .center .links {
+        flex-direction: column;
+        align-items: normal;
+    }
+} 
+
+.footer .center .links .link {
+    margin-top: 35px;
+    position: relative;
+}
+
+.footer .center .links .link ul li {
+    display: flex;
+    align-items: center;
+}
+
+.footer .center .links .link ul li a {
+    margin-bottom: 20px;
+    color: hsl(208, 11%, 55%);
+}
+
+.footer .center .links .link ul li a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+.footer .center .links .link ul li img {
+    margin-right: 20px;
+}
+
+.footer .center .links .link ul li p {
+    width: 400px;
+}
+.footer .center .links .link ul li i {
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.footer .center .links .link ul li i:hover {
+    color: hsl(322, 100%, 66%);
+}
+
+.footer .center .links .link span {
+    position: absolute;
+    left: -210px;
+    color: hsl(208, 11%, 55%);
+    top: 55px;
+}
+
+@media (max-width: 767px) {
+    .footer .center .links .link span {
+        left: 0;
+    }
+} 
+
+.footer .center .links .link .icon {
+    display: flex;
+    align-items: flex-start;
+    margin-top: -70px;
+} 
+
+@media (max-width: 767px) {
+    .footer .center .links .link .icon {
+        margin: 0 115px 30px;
+    }
+} 
